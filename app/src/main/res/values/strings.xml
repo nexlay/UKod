@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">UCode</string>
+    <string name="write_your_upc_codes_here">Write UPC-codes for</string>
+    <string name="codes">Codes</string>
+    <string name="services">Services</string>
+    <string name="delete">Clear</string>
+    <string name="result">Result</string>
+    <string name="calculate">Calculate</string>
+    <string name="save">Share</string>
+    <string name="info">about Ucode</string>
+    <string name="codesMenu">codes</string>
+    <string name="percent">%</string>
+    <string name="ts_list">list TS DTV</string>
+    <string name="service_list">list services</string>
+
+
+    <!-- MainActivity strings. -->
+    <string name="Write_your_codes_please">Write your codes, please</string>
+    <string name="Write_a_number_of_sevices_please">Write the number of services, please</string>
+    <string name="write_a_percent">Write the number of percentages, please</string>
+    <string name="Incorrect_code_is">Incorrect code </string>
+    <string name="Number_of_incorrect_code"> number </string>
+    <string name="Your_salary_is">Your salary: </string>
+    <string name="Sarvices_salary">Services salary: </string>
+    <string name="Summary">Summary: </string>
+    <string name="Services">Services: </string>
+    <string name="CN_Instalations">CN installations: </string>
+    <string name="CH_Instalations">CH installations: </string>
+    <string name="DS">DS: </string>
+    <string name="Chooser_title">Share with</string>
+    <string name="No_information_for_sending">No information for sending</string>
+    <string name="No_information_for_saving">No information for saving</string>
+
+    <!-- AboutActivity strings. -->
+    <string name="app_version">app version </string>
+    <string name="made_by">made by Mykola Pryhodskyi</string>
+
+
+    <!-- TsActivity strings. -->
+    <string name="list_TS">List TS DTV</string>
+    <string name="description_of_work">Codes description</string>
+    <string name="list_service">Kody serwisowe</string>
+
+
+    <!-- SalaryActivity strings. -->
+    <string name="salary_activity">Salary</string>
+    <string name="month_spinner">Month</string>
+    <string name="save_information">Save</string>
+    <string name="chose_a_month">Chose a month, please</string>
+    <string name="data_saved_id">Data saved</string>
+    <string name="data_not_saved">Insert data failed</string>
+    <string name="database_update_failed">Database update failed</string>
+    <string name="database_updated">Database updated</string>
+
+    <!-- Nav.drawer strings. -->
+    <string name="menu_nav_d">Menu</string>
+    <string name="follow_me">Follow me</string>
+    <string name="on_twitter">on Twitter</string>
+    <string name="on_facebook">on Facebook</string>
+    <string name="on_googleplus">on Google+</string>
+    <string name="information">Information</string>
+    <string name="tools">Tools</string>
+    <string name="rfc">RFC</string>
+    <string name="modem_login">provisioning</string>
+    <string name="refueling">refueling</string>
+    <string name="documentation">Documentation</string>
+    <string name="salary">salary</string>
+    <string name="mailJga">mail</string>
+
+    <!-- array_month_option.xml strings. -->
+    <string name="month">month</string>
+    <string name="unknown">Unknown</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <!-- dot_menu.xml strings. -->
+    <string name="db_show">Salaries database</string>
+
+    <!-- activity_salary strings. -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+    <string name="empty_view_subtitle_text">Get started by adding a data</string>
+
+    <!-- SalaryDatabase strings. -->
+    <string name="nothing_to_delete">Nothing to delete</string>
+    <string name="deleted_database">All data deleted</string>
+    <string name="delete_dialog_msg">Delete this data?</string>
+    <string name="deleted_one_data">Selected month was deleted</string>
+
+    <!-- Dialog buttons text. -->
+    <string name="cancel">Cancel</string>
+    <string name="delete_dialog">Delete</string>
+
+
+
+
+</resources>
