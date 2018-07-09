@@ -3,9 +3,9 @@ package com.example.android.ukod;
 
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
 import android.support.annotation.NonNull;
@@ -13,18 +13,17 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import android.view.Menu;
 import android.view.MenuItem;
 
 
 import android.view.View;
 
-import android.webkit.WebView;
-
-import com.example.android.ukod.data.SalaryDbHelper;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -120,11 +119,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.dot_menu_lenguage, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+            case R.id.dot_menu_locale:
+                showChangeLanguageDialog();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -151,6 +158,33 @@ public class MainActivity extends AppCompatActivity {
         Intent intent11 = new Intent(Intent.ACTION_VIEW);
         intent11.setData(Uri.parse(url5));
         startActivity(intent11);
+    }
+    public void showChangeLanguageDialog (){
+        String[] languagesList = {"English", "Polski", "Українська" };
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(getString(R.string.dialog_message_main));
+        builder.setSingleChoiceItems(languagesList, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+           switch (i){
+               case 0:
+                   LanguageHelper.changeLocale(getBaseContext().getResources(), "en");
+recreate();
+break;
+               case 1:
+                   LanguageHelper.changeLocale(getBaseContext().getResources(), "pl");
+recreate();
+break;
+               case 2:
+                   LanguageHelper.changeLocale(getBaseContext().getResources(), "uk");
+                   recreate();
+                   break;
+           }
+                    dialogInterface.dismiss();
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
 

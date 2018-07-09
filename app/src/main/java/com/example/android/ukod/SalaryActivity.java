@@ -146,7 +146,7 @@ public class SalaryActivity extends AppCompatActivity {
         String isServices = isServicesObject.getText().toString();
 
         if (isServices.equals("")) {
-            android.widget.Toast.makeText(this, getString(R.string.Write_a_number_of_sevices_please), android.widget.Toast.LENGTH_SHORT).show();
+            android.widget.Toast.makeText(this, getString(R.string.Write_a_number_of_services_please), android.widget.Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -388,12 +388,12 @@ public class SalaryActivity extends AppCompatActivity {
         yourSalary = yourSalary.setScale(2, BigDecimal.ROUND_HALF_UP);
 
 
-        String summary = getString(R.string.CN_Instalations) + countOfCn;
-        summary += "\n" + getString(R.string.CH_Instalations) + countOfCh;
+        String summary = getString(R.string.CN_Installations) + countOfCn;
+        summary += "\n" + getString(R.string.CH_Installations) + countOfCh;
         summary += "\n" + getString(R.string.DS) + countOfDs;
         summary += "\n" + getString(R.string.Services) + countOfServices;
         summary += "\n" + getString(R.string.Your_salary_is) + NumberFormat.getCurrencyInstance().format(yourSalary);
-        summary += "\n" + getString(R.string.Sarvices_salary) + NumberFormat.getCurrencyInstance().format(resultServices);
+        summary += "\n" + getString(R.string.Services_salary) + NumberFormat.getCurrencyInstance().format(resultServices);
         summary += "\n" + getString(R.string.Summary) + NumberFormat.getCurrencyInstance().format(salary);
         return summary;
     }

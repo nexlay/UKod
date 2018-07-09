@@ -7,7 +7,7 @@
     <string name="result">Result</string>
     <string name="calculate">Calculate</string>
     <string name="save">Share</string>
-    <string name="info">about Ucode</string>
+    <string name="info">about UCode</string>
     <string name="codesMenu">codes</string>
     <string name="percent">%</string>
     <string name="ts_list">list TS DTV</string>
@@ -16,20 +16,25 @@
 
     <!-- MainActivity strings. -->
     <string name="Write_your_codes_please">Write your codes, please</string>
-    <string name="Write_a_number_of_sevices_please">Write the number of services, please</string>
+    <string name="Write_a_number_of_services_please">Write the number of services, please</string>
     <string name="write_a_percent">Write the number of percentages, please</string>
     <string name="Incorrect_code_is">Incorrect code </string>
     <string name="Number_of_incorrect_code"> number </string>
-    <string name="Your_salary_is">Your salary: </string>
-    <string name="Sarvices_salary">Services salary: </string>
-    <string name="Summary">Summary: </string>
+    <string name="Your_salary_is">"Your salary: "</string>
+    <string name="Services_salary">"Services salary: "</string>
+    <string name="Summary">"Summary: "</string>
     <string name="Services">Services: </string>
-    <string name="CN_Instalations">CN installations: </string>
-    <string name="CH_Instalations">CH installations: </string>
-    <string name="DS">DS: </string>
+    <string name="CN_Installations">"CN installations: "</string>
+    <string name="CH_Installations">"CH installations: "</string>
+    <string name="DS">"DS: "</string>
     <string name="Chooser_title">Share with</string>
     <string name="No_information_for_sending">No information for sending</string>
     <string name="No_information_for_saving">No information for saving</string>
+
+    <string name="dialog_message_main">Choose language:</string>
+    <string name="english_lang">English</string>
+    <string name="poland_lang">Poland</string>
+    <string name="ukrainian_lang">Ukrainian</string>
 
     <!-- AboutActivity strings. -->
     <string name="app_version">app version </string>
@@ -39,7 +44,7 @@
     <!-- TsActivity strings. -->
     <string name="list_TS">List TS DTV</string>
     <string name="description_of_work">Codes description</string>
-    <string name="list_service">Kody serwisowe</string>
+    <string name="list_service">Services codes</string>
 
 
     <!-- SalaryActivity strings. -->
@@ -85,6 +90,9 @@
 
     <!-- dot_menu.xml strings. -->
     <string name="db_show">Salaries database</string>
+
+    <!-- dot_menu_language.xml strings. -->
+    <string name="language_dot">App language</string>
 
     <!-- activity_salary strings. -->
     <string name="empty_view_title_text">It\'s a bit lonely here...</string>

@@ -8,11 +8,8 @@
     <string name="result">Wynik</string>
     <string name="calculate">Oblicz</string>
     <string name="Write_your_codes_please">Brak wpisanych kodów</string>
-    <string name="Write_a_number_of_sevices_please">Brak wpisanych serwisów</string>
     <string name="Incorrect_code_is">"Wadliwy kod "</string>
     <string name="Your_salary_is">"Wynagrodzenie kody: "</string>
-    <string name="CN_Instalations">"CN instalacji: "</string>
-    <string name="CH_Instalations">"CH instalacji: "</string>
     <string name="DS">"DS: "</string>
     <string name="save">Wyślij</string>
     <string name="Chooser_title">Udostępnij</string>
@@ -20,7 +17,6 @@
     <string name="info">informacja o Ukod</string>
     <string name="app_version">"versia "</string>
     <string name="made_by">twórca Mikołaj Pryhodskyi</string>
-    <string name="Sarvices_salary">"Wynagrodzenie serwisy: "</string>
     <string name="Summary">"Razem: "</string>
     <string name="Services">"Serwisy: "</string>
     <string name="follow_me">Obserwuj</string>
@@ -67,7 +63,7 @@
     <string name="data_saved_id">"Dane zapisane "</string>
     <string name="db_show">Baza danych</string>
     <string name="data_not_saved">Nie udało się</string>
-    <string name="empty_view_title_text">Tu jest troche samotnie...</string>
+    <string name="empty_view_title_text">Tu jest troche samotnie…</string>
     <string name="empty_view_subtitle_text">Zacznij od dodania danych</string>
     <string name="database_update_failed">Aktualizacja nie powiodła się</string>
     <string name="database_updated">Baza danych zaktualizowana</string>
@@ -77,4 +73,13 @@
     <string name="cancel">Anuluj</string>
     <string name="delete_dialog">Usuń</string>
     <string name="deleted_one_data">Wybrany miesiąc został usunięty</string>
+    <string name="language_dot">Język aplikacji</string>
+    <string name="dialog_message_main">Wybierz język:</string>
+    <string name="poland_lang">Polski</string>
+    <string name="Write_a_number_of_services_please">Brak wpisanych serwisów</string>
+    <string name="english_lang">Angielski</string>
+    <string name="ukrainian_lang">Ukraiński</string>
+    <string name="Services_salary">"Wynagrodzenie serwisy: "</string>
+    <string name="CN_Installations">"CN instalacji: "</string>
+    <string name="CH_Installations">"CH instalacji: "</string>
 </resources>
