@@ -3,6 +3,7 @@ package com.example.android.ukod.data;
 import android.content.Context;
 import android.database.Cursor;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,8 @@ import android.widget.TextView;
 import com.example.android.ukod.R;
 
 public class SalaryCursor extends CursorAdapter {
-   public String month = "month";
+    public static String month;
+
     public SalaryCursor(Context context, Cursor c) {
         super(context, c);
     }
@@ -26,6 +28,7 @@ public class SalaryCursor extends CursorAdapter {
     public void bindView(View view, Context context, Cursor cursor) {
         TextView nameBody = view.findViewById (R.id.name_body);
         TextView salaryBody = view.findViewById(R.id.salary_body);
+
         int monthColumnIndex = cursor.getColumnIndex(SalaryContract.SalaryEntry.COLUMN_MONTH);
         int cnColumnIndex = cursor.getColumnIndex(SalaryContract.SalaryEntry.COLUMN_CN);
         int chColumnIndex = cursor.getColumnIndex(SalaryContract.SalaryEntry.COLUMN_CH);
@@ -35,42 +38,46 @@ public class SalaryCursor extends CursorAdapter {
         int servSalaryColumnIndex = cursor.getColumnIndex(SalaryContract.SalaryEntry.COLUMN_SALARY_SERVICES);
         int summaryColumnIndex = cursor.getColumnIndex(SalaryContract.SalaryEntry.COLUMN_SUMMARY_SALARY);
 
-        String salaryMonth = cursor.getString(monthColumnIndex);
+       int tempMonth = cursor.getInt(monthColumnIndex);
+       String TAG = "MyActivity";
+       Log.v(TAG,"Result of " + tempMonth);
+
+       String salaryMonth = cursor.getString(monthColumnIndex);
         switch (salaryMonth){
-            case "1":
-            month = context.getString(R.string.january);
+            case "-1":
+                month = context.getString(R.string.january);
             break;
-            case "2":
-                month = context.getString(R.string.february);
-                break;
-            case "3":
+            case "-2":
+               month = context.getString(R.string.february);
+            break;
+            case "0":
                 month = context.getString(R.string.march);
                 break;
-            case "4":
+            case "1":
                 month = context.getString(R.string.april);
                 break;
-            case "5":
+            case "2":
                 month = context.getString(R.string.may);
                 break;
-            case "6":
+            case "3":
                 month = context.getString(R.string.june);
                 break;
-            case "7":
+            case "4":
                 month = context.getString(R.string.july);
                 break;
-            case "8":
+            case "5":
                 month = context.getString(R.string.august);
                 break;
-            case "9":
+            case "6":
                 month = context.getString(R.string.september);
                 break;
-            case "10":
+            case "7":
                 month = context.getString(R.string.october);
                 break;
-            case "11":
+            case "8":
                 month = context.getString(R.string.november);
                 break;
-            case "12":
+            case "9":
                 month = context.getString(R.string.december);
                 break;
         }
@@ -81,6 +88,7 @@ public class SalaryCursor extends CursorAdapter {
         String salaryCodes = cursor.getString(codesSalaryColumnIndex);
         String salaryServ = cursor.getString(servSalaryColumnIndex);
         String salarySummary = cursor.getString(summaryColumnIndex);
+
 
         String body = month + "\n" + salaryCN + "\n" + salaryCH + "\n" +
                       salaryDS + "\n" + servCount + "\n" + salaryCodes + "\n" +

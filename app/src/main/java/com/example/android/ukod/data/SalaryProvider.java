@@ -41,10 +41,10 @@ public class SalaryProvider extends ContentProvider {
             case SALARY_ONLY_ID:
                 selection = SalaryContract.SalaryEntry._ID + "=?";
                 selectionArgs = new String[]{String.valueOf(ContentUris.parseId(uri))};
-                cursor = database.query(SalaryContract.SalaryEntry.TABLE_NAME, projection,selection,selectionArgs,null,null,sortOrder);
+                cursor = database.query(SalaryContract.SalaryEntry.TABLE_NAME, projection, selection, selectionArgs,null,null, sortOrder);
                 break;
             case SALARY_WHOLE_TABLE:
-                cursor = database.query(SalaryContract.SalaryEntry.TABLE_NAME,projection,selection,selectionArgs,null,null,sortOrder);
+                cursor = database.query(SalaryContract.SalaryEntry.TABLE_NAME,projection, selection, selectionArgs,null,null, sortOrder);
                 break;
                 default:
                     throw new IllegalArgumentException("Cannot query unknown URI " + uri);

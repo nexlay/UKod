@@ -18,8 +18,6 @@
     <string name="Write_your_codes_please">Write your codes, please</string>
     <string name="Write_a_number_of_services_please">Write the number of services, please</string>
     <string name="write_a_percent">Write the number of percentages, please</string>
-    <string name="Incorrect_code_is">Incorrect code </string>
-    <string name="Number_of_incorrect_code"> number </string>
     <string name="Your_salary_is">"Your salary: "</string>
     <string name="Services_salary">"Services salary: "</string>
     <string name="Summary">"Summary: "</string>
@@ -90,12 +88,13 @@
 
     <!-- dot_menu.xml strings. -->
     <string name="db_show">Salaries database</string>
+    <string name="graph_show">View a graph</string>
 
     <!-- dot_menu_language.xml strings. -->
     <string name="language_dot">App language</string>
 
     <!-- activity_salary strings. -->
-    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+    <string name="empty_view_title_text">It\'s a bit lonely here…</string>
     <string name="empty_view_subtitle_text">Get started by adding a data</string>
 
     <!-- SalaryDatabase strings. -->
@@ -108,7 +107,12 @@
     <string name="cancel">Cancel</string>
     <string name="delete_dialog">Delete</string>
 
-
+    <!-- GraphViewActivity strings. -->
+   <string name="graph_view_name">Graph view</string>
+    <string name="toast_graph_view">No information for graph</string>
+    <string name="salary_per_month">Salary per month</string>
+    <string name="currency"> $</string>
+    <string name="label_failed">You need at least 2 horizontal labels</string>
 
 
 </resources>

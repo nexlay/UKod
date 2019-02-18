@@ -5,6 +5,7 @@ import android.app.LoaderManager;
 import android.content.ContentUris;
 import android.content.CursorLoader;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -31,6 +32,7 @@ public class SalaryDatabase extends AppCompatActivity implements LoaderManager.L
     private static final int SALARY_LOADER = 0;
     SalaryCursor cursorAdapter;
     private Uri clickedDataUri;
+    ListView salaryListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,7 @@ public class SalaryDatabase extends AppCompatActivity implements LoaderManager.L
         }
 
 
-        ListView salaryListView = findViewById(R.id.listView_of_salary);
+        salaryListView = findViewById(R.id.listView_of_salary);
         View emptyView = findViewById(R.id.empty_view);
         salaryListView.setEmptyView(emptyView);
 
@@ -76,6 +78,7 @@ public class SalaryDatabase extends AppCompatActivity implements LoaderManager.L
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+        String sortOrder = SalaryEntry.COLUMN_MONTH;
         String[] projection = {
                 SalaryEntry._ID,
                 SalaryEntry.COLUMN_MONTH,
@@ -87,7 +90,7 @@ public class SalaryDatabase extends AppCompatActivity implements LoaderManager.L
                 SalaryEntry.COLUMN_SALARY_SERVICES,
                 SalaryEntry.COLUMN_SUMMARY_SALARY};
 
-        return new CursorLoader(this, SalaryEntry.CONTENT_URI, projection, null, null, null);
+        return new CursorLoader(this, SalaryEntry.CONTENT_URI, projection, null, null, sortOrder);
 
     }
 
@@ -108,6 +111,10 @@ public class SalaryDatabase extends AppCompatActivity implements LoaderManager.L
         }
         if (item.getItemId() == R.id.dot_menu_ts) {
             showDeleteConfirmationDialog();
+        }
+        if (item.getItemId() == R.id.dot_menu_graph){
+Intent intent = new Intent(SalaryDatabase.this,GraphViewActivity.class);
+startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

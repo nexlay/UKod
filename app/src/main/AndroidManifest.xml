@@ -28,7 +28,8 @@
             android:authorities="com.example.android.ukod"
             android:exported="false" />
 
-        <activity android:name=".SalaryDatabase"></activity>
+        <activity android:name=".SalaryDatabase" />
+        <activity android:name=".GraphViewActivity"></activity>
     </application>
 
 </manifest>

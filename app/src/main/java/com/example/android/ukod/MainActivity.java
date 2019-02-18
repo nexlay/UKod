@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
     public static final String SAMPLE_FILE_CODES = "kody_instalacji.pdf";
     public static final String SAMPLE_FILE_SERVICE = "kody_serwis.pdf";
 
-    public static final String url3 = "https://upc.rfc.pl/upc/installation";
-    public static final String url4 = "http://provisioning.upc.pl/reg/login.jsp";
-    public static final String url5 = "https://docs.google.com/spreadsheets/d/1uoqBMXuwT_x9xNArNViG2HKhU3ojw9vUfpYTiN0Xx-o/edit?ts=58861096#gid=513526830";
-    public static final String url6 = "http://poczta.jga.pl/index.php?SET_LANGUAGE=pl";
+    public static final String url3 = "http://plus.google.com/u/0/+Nick_Prigodskyi";
+    public static final String url4 = "http://plus.google.com/u/0/+Nick_Prigodskyi";
+    public static final String url5 = "http://plus.google.com/u/0/+Nick_Prigodskyi";
+    public static final String url6 = "https://mail.google.com/mail";
     private DrawerLayout mDrawerLayout;
 
 

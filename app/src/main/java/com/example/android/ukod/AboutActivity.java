@@ -1,15 +1,11 @@
 package com.example.android.ukod;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
-import com.example.android.ukod.BuildConfig;
+
 
 
 
@@ -37,11 +33,7 @@ public class AboutActivity extends AppCompatActivity {
 
         TextView textViewInfo = findViewById(R.id.text_view_info);
         String changeLogInfo = "Ostatnie zmiany:";
-        changeLogInfo += "\n" + "1. Przycisk 'Zapisz' w punkcie 'Wypłata'.";
-        changeLogInfo += "\n" + "2. Możliwość zapisać policzoną wypłatę lokalnie w aplikacji.";
-        changeLogInfo += "\n" + "3. Możliwość aktualizować i usunąć wcześniej zapisane dane.";
-        changeLogInfo += "\n" + "4. Poprawki błędów.";
-
+        changeLogInfo += "\n" + "1. Drobne poprawki.";
         textViewInfo.setText(changeLogInfo);
 
     }

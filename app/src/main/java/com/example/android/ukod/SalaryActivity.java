@@ -40,7 +40,7 @@ public class SalaryActivity extends AppCompatActivity {
     private String countOfServices;
     private double resultSalaryCodes;
     private double resultServices;
-    private double summarySalary;
+    public static double summarySalary;
 
     private Spinner myMonthSpinner;
     private int myMonth = SalaryEntry.MONTH_MONTH;
@@ -361,6 +361,12 @@ public class SalaryActivity extends AppCompatActivity {
         map.put("ZJP", 3.64);
         map.put("ZHW", 1.14);
 
+        map.put("ZQL", 6.46);
+
+        map.put("IncorrectCode", 0.00);
+
+
+
         resultServices = Double.parseDouble(countOfServices) * 30;
 
         double percents = Double.parseDouble(isPercent);
@@ -369,10 +375,10 @@ public class SalaryActivity extends AppCompatActivity {
 
         for (String arrStrCode : arrStrCodes) {
             if (!map.containsKey(arrStrCode)) {
-                return getString(R.string.Incorrect_code_is) + arrStrCode + getString(R.string.Number_of_incorrect_code) + (Arrays.asList(arrStrCodes).indexOf(arrStrCode) + 1);
-            } else if (map.containsKey(arrStrCode)) {
-                result = result + map.get(arrStrCode);
+                arrStrCode = "IncorrectCode";
             }
+                result = result + map.get(arrStrCode);
+
         }
         result = (result * percents)/100;
 
@@ -407,7 +413,7 @@ public class SalaryActivity extends AppCompatActivity {
             return;
         }
 
-        if (myMonth == 0) {
+        if (myMonth == -3) {
             Toast.makeText(this, getString(R.string.chose_a_month), Toast.LENGTH_SHORT).show();
             return;
         }

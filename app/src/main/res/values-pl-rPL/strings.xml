@@ -8,7 +8,6 @@
     <string name="result">Wynik</string>
     <string name="calculate">Oblicz</string>
     <string name="Write_your_codes_please">Brak wpisanych kodów</string>
-    <string name="Incorrect_code_is">"Wadliwy kod "</string>
     <string name="Your_salary_is">"Wynagrodzenie kody: "</string>
     <string name="DS">"DS: "</string>
     <string name="save">Wyślij</string>
@@ -25,7 +24,6 @@
     <string name="information">Informacja</string>
     <string name="codesMenu">kody pracy</string>
     <string name="description_of_work">Opis kodów</string>
-    <string name="Number_of_incorrect_code">" pod numerem "</string>
     <string name="percent">%</string>
     <string name="write_a_percent">Brak wpisanych procentów</string>
     <string name="ts_list">wykaz TS DTV</string>
@@ -82,4 +80,10 @@
     <string name="Services_salary">"Wynagrodzenie serwisy: "</string>
     <string name="CN_Installations">"CN instalacji: "</string>
     <string name="CH_Installations">"CH instalacji: "</string>
+    <string name="graph_show">Zobacz wykres</string>
+    <string name="graph_view_name">Wykres</string>
+    <string name="toast_graph_view">Za mało informacji dla rysowania wykresu</string>
+    <string name="salary_per_month">Wynagrodzenie miesięcznie</string>
+    <string name="currency">" zł"</string>
+    <string name="label_failed">Potrzebujesz co najmniej dwóch wypłat</string>
 </resources>

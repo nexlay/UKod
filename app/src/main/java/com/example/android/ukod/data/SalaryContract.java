@@ -36,19 +36,19 @@ public final class SalaryContract {
         public static final String COLUMN_SALARY_SERVICES = "Wypłata_serwisy";
         public static final String COLUMN_SUMMARY_SALARY = "Razem";
 
-        public static final int MONTH_MONTH = 0;
-        public static final int MONTH_JANUARY = 1;
-        public static final int MONTH_FEBRUARY = 2;
-        public static final int MONTH_MARCH = 3;
-        public static final int MONTH_APRIL = 4;
-        public static final int MONTH_MAY = 5;
-        public static final int MONTH_JUNE = 6;
-        public static final int MONTH_JULY = 7;
-        public static final int MONTH_AUGUST = 8;
-        public static final int MONTH_SEPTEMBER = 9;
-        public static final int MONTH_OCTOBER = 10;
-        public static final int MONTH_NOVEMBER = 11;
-        public static final int MONTH_DECEMBER = 12;
+        public static final int MONTH_MONTH = -3;
+        public static final int MONTH_JANUARY = -1;
+        public static final int MONTH_FEBRUARY = -2;
+        public static final int MONTH_MARCH = 0;
+        public static final int MONTH_APRIL = 1;
+        public static final int MONTH_MAY = 2;
+        public static final int MONTH_JUNE = 3;
+        public static final int MONTH_JULY = 4;
+        public static final int MONTH_AUGUST = 5;
+        public static final int MONTH_SEPTEMBER = 6;
+        public static final int MONTH_OCTOBER = 7;
+        public static final int MONTH_NOVEMBER = 8;
+        public static final int MONTH_DECEMBER = 9;
 
 
     }
